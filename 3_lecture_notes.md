@@ -27,3 +27,29 @@ Using sigmoid function to build logistic regression. Sigmoid function maps all i
 ![Sigmoid for logistic regression](images/sigmoid_for_logistic_regression.png)
 
 ![Logistic regression for classification](images/logistic_regression.png)
+
+**Decision boundary**
+
+![Decision boundary](images/decision_boundary.png)
+
+Below shows a line, where anything to the right of the line is considered a positive or y = 1, anything to the left of the line is negative or y = 0. This is a linear boundary because the decision boundary is a straight line betweent the positive and negative values.
+
+![Linear decision boundary](images/linear_decision_boundary.png)
+
+Below shows an example of non-linear boundary.
+
+![Non linear decision boundary](images/non_linear_boundary.png)
+
+Non-linear boundary can be even more complex which can produce more complex functions like ellipse or some random shapes.
+
+**Cost function for logistic regression**
+
+![Cost function for logistic regression](images/squared_error_cost_function_linear_regression.png)
+
+We can use squared error cost function to determine the weights and bias for linear regression problem but it is not ideal for classification problem. Look at the above picture. The pic on the left shows cost function applied for linear regression and it gives you a convex function but for logistic regression it gives you a non-convex function, i.e. if you apply the gradient descent there are lots of local minima where we can get struck in.
+
+We can use a different cost function for logistic regression so it will produce a convex function.
+
+
+
+
